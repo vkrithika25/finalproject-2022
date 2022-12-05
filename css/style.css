@@ -1,0 +1,511 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: PTSans;
+    src: url(../PTSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../Manrope-All.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../Lato-Light.ttf);
+}
+
+img {
+    max-width: 100%;
+    /* max-height: 100%; */
+    /* transition: width 2s; */
+}
+
+/* img:hover {
+    width: 500px;
+} */
+
+img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img:focus {
+    border-radius: 1px;
+    border-style: dotted;
+    border-color: #14163f;
+}
+
+p {
+    font-family: 'Lato';
+}
+
+p:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+    background-color: #07c05d;
+    background-image: linear-gradient(45deg, #07c05d 0%, #fff708 100%);
+    border-radius: 1px;
+    border-style: dotted;
+    border-color: #14163f;
+}
+
+button:focus {
+    background-color: #07c05d;
+    background-image: linear-gradient(45deg, #07c05d 0%, #fff708 100%);
+    border-radius: 1px;
+    border-style: dotted;
+    border-color: #14163f;
+}
+
+header {
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);    
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);    
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+header h1 {
+    font-style: italic;
+    color: black;
+    font-size: xx-large;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header ul li a {
+    color: black;
+    font-family: 'Poppins';
+}
+
+#headerLogo {
+    height: 40vh;
+}
+
+/* .skip {
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+.skip {
+    position: absolute;
+    top: -40px;
+}
+
+.skip:focus{
+    position: absolute;
+    top: 20px;
+} */
+
+.undraw {
+    display: none;
+}
+
+.active {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 10px auto 10px auto;
+    justify-content: center;
+}
+
+
+.intro p {
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
+    font-size: larger;
+    background-color: #f5f5f5;
+}
+
+.intro img:first-child {
+    display: none;
+}
+
+.intro button {
+    display: none;
+}
+
+#MhealLogo {
+    width: 30vw;
+    margin: auto;
+}
+
+#MhealLogo:hover {
+    width: 35vh;
+    transition: 0.7s;
+}
+
+#mheal {
+    grid-column: 2 / span 1;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: Poppins;
+    font-size: xx-large;
+}
+
+.informational {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.informational h1 {
+    text-align: center;
+}
+
+.informational p {
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
+    font-size: larger;
+    background-color: #f5f5f5;
+}
+
+.content {
+    justify-content: center;
+    justify-items: center;
+}
+
+.content p {
+    margin: 10px 10px 10px 10px;
+    font-size: larger;
+}
+
+.content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    width: 80%;
+    height: 50px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    border: none;
+    font-family: 'Lato';
+    justify-self: center;
+}
+
+.teamPhotos {
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    margin: 0% 5% 0% 5%;
+    place-items: center;
+    width: 90vw;
+    justify-content: center;
+}
+
+.leadership {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.leadership img {
+    max-width: 500px;
+    max-height: 400px;
+    /* object-fit: cover; */
+
+}
+
+#leadershipHeader {
+    text-align: center;
+    font-size: x-large;
+}
+
+.slide {
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    display: grid;
+    width: 300px;
+    grid-template-columns: 1 / span 1;
+    border-style: double;
+    border-radius: 1cm;
+    border-color: gray;
+    border-width: 2px;
+    padding: 15px 15px 15px 15px;
+    margin: 10px 10px 10px 10px;
+}
+
+.slide h2 {
+    font-family: Poppins;
+    font-weight: bold;
+    justify-self: center;
+    padding: 3px 3px 3px 3px;
+}
+
+.slide h3 {
+    font-family: 'PTSans';
+    justify-self: center;
+    padding: 3px 3px 3px 3px;
+}
+
+.slide img {
+    justify-self: center;
+    width: 90%;
+    height: auto;
+}
+
+.donation {
+    margin: 10px;
+    grid-column: 1 / span 1;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto 20% auto 20%;
+    justify-content: center;
+}
+
+#contact img {
+    height: auto;
+    width: 30%;
+}
+
+#contact img:first-child {
+    height: auto;
+    width: auto;
+    grid-row: 1 / span 3;
+}
+
+
+.part {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+}
+
+.part button {
+    margin: auto;
+}
+
+.prosthetic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    visibility: hidden;
+    height: 0px;
+}
+
+.prosthetic img {
+    width: 75%;
+    height: auto;
+}
+
+.prosthetic p {
+    grid-column: 1 / span 2;
+}
+
+#socket img {
+    grid-column: 1 / span 2;
+    width: 50%
+}
+
+.team h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.slides {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.slide h2:hover {
+    box-shadow: none
+}
+
+.slide h3:hover {
+    box-shadow: none
+}
+
+
+.slide p:hover {
+    box-shadow: none
+}
+
+#donateButton {
+    width: 50%;
+    margin: auto;
+}
+
+
+@media screen and (min-width: 700px) {
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    p {
+        font-family: 'Manrope';
+    }
+
+    .undraw {
+        display: block;
+    }
+
+    .teamPhotos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+    }
+
+    .slide:hover {
+        background-color: #32a3ee;
+        background-image: linear-gradient(135deg, #1e78b4 0%, #14163f 100%);
+        color: white
+    }
+}
+
+@media screen and (min-width: 900px) {
+    header img {
+        display: none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        margin: 10px auto 10px auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .intro button {
+        max-width: 400px;
+        max-height: 50px;
+    }
+    
+    .intro img:first-child {
+        display: block;
+    }
+
+    .intro p {
+        padding: 20px 20px 20px 20px;
+        margin: 10px 10px 10px 10px;
+        font-size: larger;
+        font-family: 'Manrope';
+        background-color: #f5f5f5;
+    } 
+    
+    .intro button {
+        display: inline-block;
+    }
+
+    #MhealLogo {
+        display: none;
+    }
+ 
+    .informational {
+        justify-content: center;
+        margin: 10px auto 10px auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    
+    .content {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas: "text image";
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        
+    }
+
+    #historyText {
+        order: 1;
+        grid-area: text;
+    }
+
+    #history {
+        order: 2;
+        grid-area: image;
+    }
+    
+    .teamPhotos {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        margin: 0% 20% 0% 20%;
+        place-items: center;
+    }
+    
+    .teamPhotos img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    #photo6 {
+        grid-column: 1 / span 2;
+    }
+    
+    #photo8 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+    
+    #photo7 {
+        grid-column: 2 / span 2;
+        grid-row: 4 / span 2;
+    }
+    
+    .leadership {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    
+}
